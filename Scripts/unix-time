@@ -1,0 +1,11 @@
+#!/bin/python3
+
+#show current unix time and seconds until 32 bit unix time runs out
+
+import time
+
+UnixTime = int(time.time())
+IntLimit = 2 ** 31 - 1
+
+print(f"Current Unix Time: {UnixTime}")
+print(f"Seconds Remaing:   {IntLimit - UnixTime}")
